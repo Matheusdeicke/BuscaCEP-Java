@@ -30,6 +30,12 @@ public class NewJFrame extends javax.swing.JFrame {
     public NewJFrame() {
         initComponents();
         setLocationRelativeTo(null);
+        
+        abaNada.setVisible(true);
+        abaInicio.setVisible(false);
+        abaSobre.setVisible(false);
+        
+        
     }
 
     /**
@@ -49,6 +55,7 @@ public class NewJFrame extends javax.swing.JFrame {
         menuSobre = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         abas = new javax.swing.JPanel();
+        abaNada = new javax.swing.JPanel();
         abaInicio = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -64,6 +71,9 @@ public class NewJFrame extends javax.swing.JFrame {
         btnCancelar = new javax.swing.JButton();
         checkTermos = new javax.swing.JCheckBox();
         abaSobre = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -81,23 +91,23 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
-        jLabel6.setText("INICIO");
+        jLabel6.setText("CEP");
 
         javax.swing.GroupLayout menuInicioLayout = new javax.swing.GroupLayout(menuInicio);
         menuInicio.setLayout(menuInicioLayout);
         menuInicioLayout.setHorizontalGroup(
             menuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuInicioLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
+                .addGap(63, 63, 63)
                 .addComponent(jLabel6)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         menuInicioLayout.setVerticalGroup(
             menuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuInicioLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(15, 15, 15)
                 .addComponent(jLabel6)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         menuSobre.setBackground(new java.awt.Color(204, 204, 204));
@@ -151,10 +161,23 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(menuInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(menuSobre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(509, Short.MAX_VALUE))
         );
 
         abas.setBackground(new java.awt.Color(51, 51, 51));
+
+        abaNada.setBackground(new java.awt.Color(51, 51, 51));
+
+        javax.swing.GroupLayout abaNadaLayout = new javax.swing.GroupLayout(abaNada);
+        abaNada.setLayout(abaNadaLayout);
+        abaNadaLayout.setHorizontalGroup(
+            abaNadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 908, Short.MAX_VALUE)
+        );
+        abaNadaLayout.setVerticalGroup(
+            abaNadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 406, Short.MAX_VALUE)
+        );
 
         abaInicio.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -205,18 +228,17 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(abaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(checkTermos)
-                    .addGroup(abaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(abaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(abaInicioLayout.createSequentialGroup()
                             .addComponent(btnCancelar)
-                            .addGap(87, 87, 87)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                             .addComponent(btnBuscar))
-                        .addGroup(abaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtCep, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)
-                            .addComponent(labelEndereco)
-                            .addComponent(labelBairro)
-                            .addComponent(labelCidade)
-                            .addComponent(labelUf))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(txtCep, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(labelEndereco, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(labelBairro, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(labelCidade, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(labelUf, javax.swing.GroupLayout.Alignment.LEADING)))
+                .addContainerGap(368, Short.MAX_VALUE))
         );
         abaInicioLayout.setVerticalGroup(
             abaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,24 +265,59 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(labelUf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(checkTermos)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                .addGap(101, 101, 101)
                 .addGroup(abaInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBuscar)
-                    .addComponent(btnCancelar))
-                .addGap(89, 89, 89))
+                    .addComponent(btnCancelar)
+                    .addComponent(btnBuscar))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
 
         abaSobre.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("DESENVOLVIDO POR GUSTAVO MOTTA E MATHEUS DEICKE");
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("API Utilizada: ViaCEP");
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Repositório GITHUB");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout abaSobreLayout = new javax.swing.GroupLayout(abaSobre);
         abaSobre.setLayout(abaSobreLayout);
         abaSobreLayout.setHorizontalGroup(
             abaSobreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
+            .addGroup(abaSobreLayout.createSequentialGroup()
+                .addGap(165, 165, 165)
+                .addGroup(abaSobreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
         abaSobreLayout.setVerticalGroup(
             abaSobreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 628, Short.MAX_VALUE)
+            .addGroup(abaSobreLayout.createSequentialGroup()
+                .addGap(209, 209, 209)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10)
+                .addContainerGap(387, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout abasLayout = new javax.swing.GroupLayout(abas);
@@ -270,12 +327,18 @@ public class NewJFrame extends javax.swing.JFrame {
             .addComponent(abaSobre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(abasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(abaInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(abasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, abasLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(abaNada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         abasLayout.setVerticalGroup(
             abasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(abaSobre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(abasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(abaInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(abasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(abaNada, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -298,14 +361,21 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void menuSobreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSobreMouseClicked
         // TODO add your handling code here:
+        abaNada.setVisible(true);
         abaSobre.setVisible(true);
         abaInicio.setVisible(false);
+        menuSobre.setBackground(Color.white);
+        menuInicio.setBackground(new Color(204, 204, 204));
+        
     }//GEN-LAST:event_menuSobreMouseClicked
 
     private void menuInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuInicioMouseClicked
         // TODO add your handling code here:
+        abaNada.setVisible(true);
         abaInicio.setVisible(true);
         abaSobre.setVisible(false);
+        menuInicio.setBackground(Color.white);
+        menuSobre.setBackground(new Color(204, 204, 204));
     }//GEN-LAST:event_menuInicioMouseClicked
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
@@ -351,6 +421,25 @@ public class NewJFrame extends javax.swing.JFrame {
         labelUf.setText("");
     }//GEN-LAST:event_btnCancelarActionPerformed
 
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        try{
+            java.awt.Desktop.getDesktop().browse(new java.net.URI("https://viacep.com.br/"));
+        } catch (java.io.IOException | java.net.URISyntaxException e) {
+            e.printStackTrace();
+        }
+        
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        // TODO add your handling code here:
+        try{
+            java.awt.Desktop.getDesktop().browse(new java.net.URI("https://viacep.com.br/"));
+        } catch (java.io.IOException | java.net.URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_jLabel10MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -389,12 +478,15 @@ public class NewJFrame extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel abaInicio;
+    private javax.swing.JPanel abaNada;
     private javax.swing.JPanel abaSobre;
     private javax.swing.JPanel abas;
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JCheckBox checkTermos;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -402,6 +494,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField labelBairro;
     private javax.swing.JTextField labelCidade;

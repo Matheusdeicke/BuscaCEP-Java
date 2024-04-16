@@ -56,6 +56,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         abas = new javax.swing.JPanel();
         abaNada = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         abaInicio = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -168,15 +170,35 @@ public class NewJFrame extends javax.swing.JFrame {
 
         abaNada.setBackground(new java.awt.Color(51, 51, 51));
 
+        jLabel12.setFont(new java.awt.Font("Mongolian Baiti", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("BEM VINDO AO BUSCA CEP");
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Clique em CEP para realizar uma consulta ou SOBRE para saber mais sobre os desenvolvedores.");
+
         javax.swing.GroupLayout abaNadaLayout = new javax.swing.GroupLayout(abaNada);
         abaNada.setLayout(abaNadaLayout);
         abaNadaLayout.setHorizontalGroup(
             abaNadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 908, Short.MAX_VALUE)
+            .addGroup(abaNadaLayout.createSequentialGroup()
+                .addGap(336, 336, 336)
+                .addComponent(jLabel12)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, abaNadaLayout.createSequentialGroup()
+                .addContainerGap(48, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addGap(46, 46, 46))
         );
         abaNadaLayout.setVerticalGroup(
             abaNadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 406, Short.MAX_VALUE)
+            .addGroup(abaNadaLayout.createSequentialGroup()
+                .addGap(159, 159, 159)
+                .addComponent(jLabel12)
+                .addGap(66, 66, 66)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(403, Short.MAX_VALUE))
         );
 
         abaInicio.setBackground(new java.awt.Color(51, 51, 51));
@@ -487,6 +509,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

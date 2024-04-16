@@ -434,7 +434,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
         try{
-            java.awt.Desktop.getDesktop().browse(new java.net.URI("https://viacep.com.br/"));
+            java.awt.Desktop.getDesktop().browse(new java.net.URI("https://github.com/Matheusdeicke/BuscaCEP-Java"));
         } catch (java.io.IOException | java.net.URISyntaxException e) {
             e.printStackTrace();
         }
